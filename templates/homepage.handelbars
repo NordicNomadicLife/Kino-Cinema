@@ -1,0 +1,107 @@
+ <section class="upperSection">
+            <figure class="cinemaSeats">
+               <img
+                  class="picUnderNav"
+                  src="Pictures/seats.png"
+                  alt="Image under the navbar not fount!" />
+            </figure>
+            <button type="button" class="allMoviesBtn">Show all movies</button>
+            <h2 class="topTitle">Top three movies</h2>
+            <hr class="lineX" />
+            <figure class="topThree">
+               <div class="containerLeft">
+               </div>
+               <!--smaller image top-->
+               <div class="containerRight">
+                  <div class="movieCardTop">
+                  </div>
+                  <!--smaller image down-->
+                  <div class="movieCardBottom">
+                  </div>
+               </div>
+            </figure>
+         </section>
+         <section class="mid">
+            <section class="filterSection">
+               <form>
+                  <!--
+         Here goes the filter menu.
+         -->
+               </form>
+            </section>
+            <section class="allMovies">
+               <h2 class="topTitle">All Movies</h2>
+               <figure class="movies">
+                  <!--
+          Here goes all movies.
+          -->
+               </figure>
+            </section>
+            <section class="extraSection">
+               <!-- here goes all the cards like present card 4DX!...-->
+            </section>
+         </section>
+         <section class="lowerSection">
+            <figure class="upComingMovies">
+               <!--up coming movies here-->
+            </figure>
+            <div class="upComingEvents">
+               <!--All the events here-->
+               <hr class="eventLine" />
+               <h2>Kommande evenemang</h2>
+               <div class="cardsContainer">
+                  <div class="eventCard">
+                     <img
+                        class="eventImg"
+                        src="Pictures/event1.png"
+                        alt="Event image not found" />
+                     <p class="eventInfo">
+                        Here goes the information about event
+                     </p>
+                     <button id="eventBtn" class="fa-solid fa-film">
+                        Ticket
+                     </button>
+                  </div>
+                  <div class="eventCard">
+                     <img
+                        class="eventImg"
+                        src="Pictures/event2.png"
+                        alt="Event image not found" />
+                     <p class="eventInfo">
+                        Here goes the information about event
+                     </p>
+                     <button id="eventBtn" class="fa-solid fa-film">
+                        Ticket
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <section class="skiReviewerSection">
+         <figure>
+            <img
+               src="./pictures/skier.png"
+               alt="Skidåkare som ser på bio"
+               class="skiReviewer" />
+            <blockquote>Oerhört mäktigt</blockquote>
+            <figcaption>-Stig Helmer</figcaption>
+         </figure>
+         <figure>
+            <img
+               src="./pictures/skierTwo.png"
+               alt="Skidåkare som ser på bio"
+               class="skiReviewer" />
+            <blockquote>Helt underbar helg</blockquote>
+            <figcaption>-Johan Jonsson</figcaption>
+         </figure>
+         <figure>
+            <img
+               src="./pictures/skierThree.png"
+               alt="Skidåkare som ser på bio"
+               class="skiReviewer" />
+            <blockquote>Fantastiskt!</blockquote>
+            <figcaption>-Frida Karlsson</figcaption>
+         </figure>
+      </section>
