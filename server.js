@@ -15,12 +15,21 @@ app.use("/static", express.static("./static"));
 
 // Route for homepage
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Kino Cinema', welcomeMessage: 'Välkommen till Kino!' });
+    res.render('index', 
+      { title: 'Kino Cinema', 
+        welcomeMessage: 'Välkommen till Kino!' });
 });
 
 // Route for moviespage
 app.get('/moviesPage', (req, res) => {
-    res.render('moviesPage', { title: 'Film sida', });
+    res.render('moviesPage', 
+      { title: 'Film sida', });
+});
+
+// Route for Allmovies
+app.get('/allMovies', (req, res) => {
+  res.render('allMovies', 
+    { title: 'Film sida', });
 });
 
 
