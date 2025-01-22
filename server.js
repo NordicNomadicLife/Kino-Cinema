@@ -26,17 +26,17 @@ app.get('/moviesPage', (req, res) => {
       { title: 'Film sida', });
 });
 
-// Route for Allmovies
+/* // Route for Allmovies
 app.get('/allMovies', (req, res) => {
   res.render('allMovies', 
     { title: 'Film sida', });
-});
+}); */
 
 
 
-app.get("/", async (req, res) => {
+app.get("/allMovies", async (req, res) => {
     const movies = await loadMovies();
-    res.render("home", { movies });
+    res.render("allMovies", { movies });
   });
   
   app.get("/movies/:movieId", async (req, res) => {
