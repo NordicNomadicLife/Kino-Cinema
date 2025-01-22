@@ -1,9 +1,12 @@
-<article class="movie">
-  <h1>{{ movie.attributes.title }}</h1>
-  <div class="intro">
-    {{{ movie.attributes.intro }}}
-  </div>
-  {{#if movie.attributes.image }}
-  <img src="{{ movie.attributes.image.url }}">
-  {{/if }}
-</article>
+<h1>{{title}}</h1>
+<ul>
+    {{#each movies}}
+    <li>
+        <h2>{{this.attributes.title}}</h2>
+        <p>{{{this.attributes.intro}}}</p>
+        {{#if this.attributes.image}}
+        <img src="{{this.attributes.image.url}}" alt="{{this.attributes.title}}">
+        {{/if}}
+    </li>
+    {{/each}}
+</ul>
