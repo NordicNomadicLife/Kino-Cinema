@@ -13,6 +13,7 @@ app.set("views", "./templates");
 
 app.use("/static", express.static("./static"));
 
+
 // Route for homepage
 app.get('/', (req, res) => {
     res.render('index', 
@@ -36,7 +37,7 @@ app.get('/allMovies', (req, res) => {
 
 app.get("/allMovies", async (req, res) => {
     const movies = await loadMovies();
-    res.render("allMovies",{ title: "Alla filmer", movies });
+    res.render("allMovies",{ movies });
   });
   
   app.get("/movies/:movieId", async (req, res) => {
