@@ -506,27 +506,31 @@ footer {
    color: white;
 }
 
-.moviesTitle{
+.movieTitle{
 color: black;
+}
+
+.intro{
+   color: black;
 }
 
 .moviesList {
    list-style: none;
    padding: 0;
-   background-color: black;
  }
  
- .moviesLink {
+ .movieTitle {
+   a{
    margin: 20px 0;
    padding: 10px;
    border: 1px solid #ddd;
    border-radius: 5px;
    color: black;
- }
+ }}
  
  
  
- .moviesImg {
+ .movieImg {
    max-width: 200px;
    height: auto;
    display: block;
