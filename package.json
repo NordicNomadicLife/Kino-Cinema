@@ -7,7 +7,7 @@
   "scripts": {
     "sass:compile": "sass src/sections/main.scss main.css",
     "sass:watch": "sass --watch src/sections/main.scss main.css",
-    "test:jest": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "author": "",
   "license": "ISC",
@@ -32,6 +32,7 @@
   "dependencies": {
     "express": "^4.21.2",
     "express-handlebars": "^8.0.1",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "supertest": "^7.0.0"
   }
 }
