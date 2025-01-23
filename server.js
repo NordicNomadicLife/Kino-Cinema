@@ -36,7 +36,7 @@ app.get('/allMovies', (req, res) => {
 
 app.get("/allMovies", async (req, res) => {
     const movies = await loadMovies();
-    res.render("allMovies", { movies });
+    res.render("allMovies",{ title: "Alla filmer", movies });
   });
   
   app.get("/movies/:movieId", async (req, res) => {
