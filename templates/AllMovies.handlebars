@@ -1,12 +1,13 @@
-<h1>{{title}}</h1>
-<ul>
-    {{#each movies}}
-    <li>
-        <h2>{{this.attributes.title}}</h2>
-        <p>{{{this.attributes.intro}}}</p>
-        {{#if this.attributes.image}}
-        <img src="{{this.attributes.image.url}}" alt="{{this.attributes.title}}">
-        {{/if}}
-    </li>
-    {{/each}}
+<h1 class="movieTitle" >{{title}}</h1>
+<ul class="moviesList">
+  {{#each movies}}
+  <li class="movie-item">
+    <a href="/movies/{{id}}" class="movieLink">
+      <h2>{{attributes.title}}</h2>
+    </a>
+    {{#if attributes.image}}
+    <img class="movieImg" src="{{attributes.image.url}}" alt="{{attributes.title}}" class="movie-image">
+    {{/if}}
+  </li>
+  {{/each}}
 </ul>
