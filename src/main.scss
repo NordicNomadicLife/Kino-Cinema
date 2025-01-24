@@ -505,3 +505,46 @@ footer {
    background-color: #ffb509;
    color: white;
 }
+
+.movieTitle{
+color: black;
+}
+
+.intro{
+   color: black;
+}
+
+.moviesList {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .movieTitle {
+   a{
+   margin: 20px 0;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   color: black;
+ }}
+ 
+ 
+ 
+ .movieImg {
+   max-width: 200px;
+   height: auto;
+   display: block;
+   margin-top: 10px;
+ } 
+
+ .movieSite{
+   color: black;
+
+   img{
+      max-width: 200px;
+   height: auto;
+   display: block;
+   margin-top: 10px;
+   }
+ }
+ 

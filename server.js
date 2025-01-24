@@ -1,9 +1,14 @@
 import express from 'express';
+import path from 'path';
+import { engine } from 'express-handlebars';
+import initApp from './app.js';
+import { loadMovie, loadMovies } from './importMovies.js';
 
-const app = express();
+const api={
+  loadMovie,
+  loadMovies,
+};
 
-app.get('/', (request, response) => {
-    response.send('hello, world');
-});
-
+const app = initApp(api);
+// Start server
 app.listen(5080);

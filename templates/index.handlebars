@@ -1,68 +1,8 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Kino</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-      <script type="module" src="main.js" defer></script>
-      <script
-         src="https://kit.fontawesome.com/8357c99e29.js"
-         crossorigin="anonymous"></script>
-      <!--The script above needs to be added on every singel html file that contains moviecard-->
-   </head>
-
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Kino</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script type="module" src="main.js" defer></script>
-  <script src="https://kit.fontawesome.com/8357c99e29.js" crossorigin="anonymous"></script>
-  <!--The script above needs to be added on every singel html file that contains moviecard-->
-</head>
-          
-   <body>
-      <header>
-         <img
-            class="kinoLogo"
-            src="Pictures/logoHead.png"
-            alt="logotyp för Kino" usemap="#logoMap"/>
-            <map name="logoMap">
-              <area shape="rect" coords="225,10,573,143" href="index.html" alt="Kino">
-            </map>
-         <div class="navContainer">
-            <nav class="headerNav">
-               <a href="moviesPage.html" class="headerNavItem">
-                  See all movies</a
-               >
-               <a href="#" class="headerNavItem">Link</a>
-               <a href="#" class="headerNavItem">Link</a>
-               <a href="#" class="headerNavItem">Link</a>
-               <a href="#" class="headerNavItem">Link</a>
-               <a href="#" class="headerNavItem">Link</a>
-               <a href="#" class="headerNavItem">Link</a>
-               <a href="#" class="headerNavItem">Link</a>
-            </nav>
-            <div class="searchBar">
-               <input
-                  type="search"
-                  placeholder="Search..."
-                  class="searchInput" />
-               <button class="searchBtn">Search</button>
-            </div>
-         </div>
-         
-      </header>
-
-      <main>
-         <section class="upperSection">
+<section class="upperSection">
             <figure class="cinemaSeats">
                <img
                   class="picUnderNav"
-                  src="Pictures/seats.png"
+                  src="/static/Pictures/seats.png"
                   alt="Image under the navbar not fount!" />
             </figure>
             <button type="button" class="allMoviesBtn">Show all movies</button>
@@ -113,7 +53,7 @@
                   <div class="eventCard">
                      <img
                         class="eventImg"
-                        src="Pictures/event1.png"
+                        src="/static/Pictures/event1.png"
                         alt="Event image not found" />
                      <p class="eventInfo">
                         Here goes the information about event
@@ -125,7 +65,7 @@
                   <div class="eventCard">
                      <img
                         class="eventImg"
-                        src="Pictures/event2.png"
+                        src="/static/Pictures/event2.png"
                         alt="Event image not found" />
                      <p class="eventInfo">
                         Here goes the information about event
@@ -142,7 +82,7 @@
       <section class="skiReviewerSection">
          <figure>
             <img
-               src="./pictures/skier.png"
+               src="./static/pictures/skier.png"
                alt="Skidåkare som ser på bio"
                class="skiReviewer" />
             <blockquote>Oerhört mäktigt</blockquote>
@@ -150,7 +90,7 @@
          </figure>
          <figure>
             <img
-               src="./pictures/skierTwo.png"
+               src="./static/pictures/skierTwo.png"
                alt="Skidåkare som ser på bio"
                class="skiReviewer" />
             <blockquote>Helt underbar helg</blockquote>
@@ -158,25 +98,10 @@
          </figure>
          <figure>
             <img
-               src="./pictures/skierThree.png"
+               src="./static/pictures/skierThree.png"
                alt="Skidåkare som ser på bio"
                class="skiReviewer" />
             <blockquote>Fantastiskt!</blockquote>
             <figcaption>-Frida Karlsson</figcaption>
          </figure>
       </section>
-      <footer>
-         <nav>
-            <a href="#" class="footerNav footerAboutUsLink">Om oss</a>
-            <a href="#" class="footerNav footerAllMoviesLink">Alla filmer</a>
-            <a href="#" class="footerNav footerInstagramLink">Instagram</a>
-            <a href="#" class="footerNav footerFacebookLink">Facebook</a>
-            <a href="#" class="footerNav footerXLink">X</a>
-            <a href="#" class="footerNav footerTosLink">ToS</a>
-            <a href="#" class="footerNav footerPrivacyPolicyLink"
-               >Privacy policy</a
-            >
-         </nav>
-      </footer>
-   </body>
-</html>

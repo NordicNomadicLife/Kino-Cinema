@@ -1,0 +1,13 @@
+<h1 class="movieTitle" >{{title}}</h1>
+<ul class="moviesList">
+  {{#each movies}}
+  <li class="movie-item">
+    <a href="/movies/{{id}}" class="movieLink">
+      <h2 class="movieTitle">{{attributes.title}}</h2>
+    </a>
+    {{#if attributes.image}}
+    <img class="movieImg" src="{{attributes.image.url}}" alt="{{attributes.title}}" class="movie-image">
+    {{/if}}
+  </li>
+  {{/each}}
+</ul>
